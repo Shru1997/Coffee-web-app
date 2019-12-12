@@ -1,0 +1,1639 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#"
+     xml:base="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#belongs_to -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#belongs_to">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_account -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_account">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_chocolatetopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_chocolatetopping">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Bittersweet_chocolate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Ruby_chocolate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#White_chocolate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_flavour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_flavour">
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolatey"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Smokey"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_fruittopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_fruittopping">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Rasberry"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_nuttytopping -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#has_nuttytopping">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachios"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Walnut"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#is_madeof -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#is_madeof">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apricots"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cashews"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachios"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raisins"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Walnut"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apple"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Rasberry"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+        <rdfs:range>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Bittersweet_chocolate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Dark_chocolate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milk_chocolate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Ruby_chocolate"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#White_chocolate"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Add_ins -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Add_ins">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_Username -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_Username">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_login"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_username -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_username">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_login"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Email_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Email_id">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_signin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#First_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#First_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_signin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Last_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Last_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_signin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Password -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Password">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_signin"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Size">
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Sponge_flavour -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Sponge_flavour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Syrup_name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Syrup_name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#name">
+        <rdfs:domain>
+            <owl:Class>
+                <owl:unionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+                    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+                </owl:unionOf>
+            </owl:Class>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_login -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_login">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Americano_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Americano_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apricots -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apricots">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Banana_milkshake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Banana_milkshake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Bittersweet_chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Bittersweet_chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Black_tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Black_tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blackforest_cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blackforest_cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cappuccino_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cappuccino_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cashews -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cashews">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_icecream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_icecream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_milkshake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_milkshake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolatey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolatey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cinnamoniced_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cinnamoniced_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Creamyiced_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Creamyiced_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_account -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_account">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_login -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_login">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_signin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_signin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_account"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Dark_chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Dark_chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Expresso_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Expresso_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Green_tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Green_tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Herbal_tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Herbal_tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icedviet_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icedviet_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Lemonadeiced_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Lemonadeiced_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Mango_icecream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Mango_icecream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milk_chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milk_chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Mocha_coffee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Mocha_coffee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Oreo_milkshake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Oreo_milkshake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Organic_tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Organic_tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Person"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachio_icecream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachio_icecream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raisins -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raisins">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Rasberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Rasberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raspberry_milkshake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raspberry_milkshake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Redvelvet_cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Redvelvet_cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Ruby_chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Ruby_chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Smokey -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Smokey">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry_milkshake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry_milkshake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_cake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_cake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_icecream -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_icecream">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Walnut -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Walnut">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#White_chocolate -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#White_chocolate">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Person"/>
+        <has_account rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account"/>
+        <Admin_Username>shruthi</Admin_Username>
+        <Admin_password>shru1997</Admin_password>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Americano_hotcoffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Americano_hotcoffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety"/>
+        <Add_ins>Splash of skimmed milk</Add_ins>
+        <Flavour>Caramel</Flavour>
+        <Size>Short   [236ml]</Size>
+        <Syrup_name>Classic</Syrup_name>
+        <Topping>Hazelnut</Topping>
+        <name>Regular Americano Hot Coffee</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apple -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apple">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apple_topping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apple_topping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+        <is_madeof rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Apple"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Banana_milkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Banana_milkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity"/>
+        <Add_ins>Splash of Skimmed milk with ni ice</Add_ins>
+        <Flavour>Caramel</Flavour>
+        <Size>Regular</Size>
+        <Syrup_name>Honey</Syrup_name>
+        <Topping>Chocolate</Topping>
+        <name>Sugar free banana milkshake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Bittersweet_chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Bittersweet_chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Black_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Black_tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity"/>
+        <Flavour>Peppermint</Flavour>
+        <Syrup_name>Vanilla</Syrup_name>
+        <Topping>Caramel Drizzle</Topping>
+        <name>Strong Black Tea</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blackforest_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blackforest_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake"/>
+        <has_fruittopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry"/>
+        <Flavour>Creamy</Flavour>
+        <Sponge_flavour>Vanilla</Sponge_flavour>
+        <Syrup_name>Chocolate</Syrup_name>
+        <Topping>Alomd with Cherry</Topping>
+        <name>Frozen blackforest cake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cappuccino_hotcoffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cappuccino_hotcoffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety"/>
+        <Add_ins>Splash of Almond drink</Add_ins>
+        <Flavour>Chocolety</Flavour>
+        <Size>Grande [473ml]</Size>
+        <Syrup_name>Hazelnut</Syrup_name>
+        <Topping>Dark Chocolate</Topping>
+        <name>Frenchroastcappuccino_coffee</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cashews -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cashews">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake"/>
+        <has_chocolatetopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Dark_chocolate"/>
+        <has_fruittopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry"/>
+        <has_nuttytopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond"/>
+        <Flavour>Sugar free caramel</Flavour>
+        <Sponge_flavour>Butter</Sponge_flavour>
+        <Syrup_name>Hazelnut</Syrup_name>
+        <Topping>Caramel with pista</Topping>
+        <name>Molten chocolate cake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_icecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_icecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+        <has_nuttytopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Walnut"/>
+        <Flavour>Mint chocolate</Flavour>
+        <Syrup_name>Honey</Syrup_name>
+        <Topping>Chocolate choco chip</Topping>
+        <name>Belgium chocolate icecream</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_milkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_milkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Smokey"/>
+        <Add_ins>Splash of cream with ice</Add_ins>
+        <Flavour>Almond</Flavour>
+        <Size>Large</Size>
+        <Syrup_name>Caramel</Syrup_name>
+        <Topping>Cinnamon</Topping>
+        <name>Cocoa Chocolate milkshake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cinnamoniced_coldcoffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cinnamoniced_coldcoffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity"/>
+        <Add_ins>Splash of Whole milk with extra ice</Add_ins>
+        <Flavour>Cinnamon</Flavour>
+        <Size>Tall [355]</Size>
+        <Syrup_name>Vanilla</Syrup_name>
+        <Topping>Hazelnut drizzle</Topping>
+        <name>Sugarfreecinnamoniced_coffee with extra ice</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Creamyiced_coldcoffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Creamyiced_coldcoffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty"/>
+        <Add_ins>Splash of Almond  drink with extra ice</Add_ins>
+        <Flavour>Almond</Flavour>
+        <Size>Venti  [591 ml]</Size>
+        <Syrup_name>Chocolate</Syrup_name>
+        <Topping>Whipped cream</Topping>
+        <name>Caramelcreamyiced_coldcoffee</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Person"/>
+        <has_account rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_account"/>
+        <Email_id>shruthi123@gmail.com</Email_id>
+        <First_name>Shruthi</First_name>
+        <Last_name>Lokesh</Last_name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_account -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_account">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Account"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Dark_chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Dark_chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Expresso_hotcoffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Expresso_hotcoffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety"/>
+        <Add_ins>Splash of whole milk</Add_ins>
+        <Flavour>Cinnamon</Flavour>
+        <Syrup_name>Hazelnut</Syrup_name>
+        <Topping>Whipped Cream</Topping>
+        <name>Doubleexpresso_hotcoffee</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Green_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Green_tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety"/>
+        <Flavour>Toasty</Flavour>
+        <Syrup_name>Chocolate</Syrup_name>
+        <Topping>Mint</Topping>
+        <name>Lemon Green Tea</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Herbal_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Herbal_tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+        <Flavour>Peppermint</Flavour>
+        <Syrup_name>Classic</Syrup_name>
+        <Topping>Hibiscus</Topping>
+        <name>Peppermint Herbel Tea</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icedviet_coldcoffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icedviet_coldcoffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety"/>
+        <Add_ins>Splash of cream with light ice</Add_ins>
+        <Flavour>Peppermint</Flavour>
+        <Size>short [236ml]</Size>
+        <Syrup_name>Honey</Syrup_name>
+        <Topping>Caramel crunch</Topping>
+        <name>Sugarfree Icedviet Coffee</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Lemonadeiced_coffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Lemonadeiced_coffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cold_coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Smokey"/>
+        <Add_ins>Splas of whole milk</Add_ins>
+        <Flavour>Mint</Flavour>
+        <Size>Short [236 ml]</Size>
+        <Syrup_name>Classic</Syrup_name>
+        <Topping>Hazelnut</Topping>
+        <name>Regular Lemonadeiced coffee</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Mango_icecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Mango_icecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+        <has_chocolatetopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Dark_chocolate"/>
+        <has_fruittopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raspberry"/>
+        <has_nuttytopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cashews"/>
+        <Flavour>Mango</Flavour>
+        <Syrup_name>Honey</Syrup_name>
+        <Topping>Cashews</Topping>
+        <name>Creamy Mango Icream</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milk_chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milk_chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Mocha_hotcoffee -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Mocha_hotcoffee">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety"/>
+        <Add_ins>Splash of Whole milk</Add_ins>
+        <Flavour>Chocolate</Flavour>
+        <Size>Venti [591ml]</Size>
+        <Syrup_name>Hazelnut</Syrup_name>
+        <Topping>Mocha Drizzle</Topping>
+        <name>Light Mocha Hot coffee</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Oreo_milkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Oreo_milkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolety"/>
+        <Add_ins>Splash of skimmed milk with extra ice</Add_ins>
+        <Flavour>chocolate</Flavour>
+        <Size>Regular</Size>
+        <Syrup_name>Classic</Syrup_name>
+        <Topping>Caramel crunch</Topping>
+        <name>Cold Oreo Milkshake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Organic_tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Organic_tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity"/>
+        <Flavour>Honey</Flavour>
+        <Syrup_name>Honey</Syrup_name>
+        <Topping>Caramel Drizzle</Topping>
+        <name>Hibiscus Organice Tea</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachio_icecream -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachio_icecream">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+        <has_chocolatetopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milk_chocolate"/>
+        <has_fruittopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry"/>
+        <has_nuttytopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachios"/>
+        <Flavour>Pista</Flavour>
+        <Syrup_name>Classic</Syrup_name>
+        <Topping>Almond</Topping>
+        <name>Gelato Pistachio Icecream</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachios -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Pistachios">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raisins -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raisins">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raspberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raspberry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raspberry_milkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raspberry_milkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity"/>
+        <has_fruittopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raspberry"/>
+        <Add_ins>spalsh of almond milk with no ice</Add_ins>
+        <Flavour>Raspberry</Flavour>
+        <Size>Extra large</Size>
+        <Syrup_name>Sugar</Syrup_name>
+        <Topping>Hazelnut drizzle</Topping>
+        <name>Skimmedmilk Raspberry Milkshake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Redvelvet_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Redvelvet_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake"/>
+        <has_chocolatetopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Ruby_chocolate"/>
+        <has_fruittopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cherry"/>
+        <has_nuttytopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Raisins"/>
+        <Flavour>Creamy</Flavour>
+        <Sponge_flavour>Butter</Sponge_flavour>
+        <Syrup_name>Honey</Syrup_name>
+        <Topping>Cherry</Topping>
+        <name>Crimson Redvelvet Cake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Ruby_chocolate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Ruby_chocolate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Smokey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Smokey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Flavour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry">
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruit_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry_milkshake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry_milkshake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milkshake"/>
+        <has_chocolatetopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Milk_chocolate"/>
+        <has_flavour rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Fruity"/>
+        <Add_ins>Splash of skimmed milk with extra ice</Add_ins>
+        <Flavour>Cinnamon</Flavour>
+        <Size>Regular</Size>
+        <Syrup_name>Hazelnut</Syrup_name>
+        <Topping>Whipped cream</Topping>
+        <name>Iced Strawberry Milkshake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Drinks"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Food"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_cake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_cake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cake"/>
+        <has_chocolatetopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Ruby_chocolate"/>
+        <has_fruittopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Strawberry"/>
+        <has_nuttytopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond"/>
+        <Flavour>Cramel crunch</Flavour>
+        <Sponge_flavour>Butter</Sponge_flavour>
+        <Syrup_name>Mango</Syrup_name>
+        <Topping>Chocochip</Topping>
+        <name>Chocochip Vanilla cake</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_icecream1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_icecream1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+        <has_chocolatetopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Bittersweet_chocolate"/>
+        <has_fruittopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry"/>
+        <has_nuttytopping rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Almond"/>
+        <Flavour>Caramel</Flavour>
+        <Syrup_name>chocolate</Syrup_name>
+        <Topping>Chocolate chocochip</Topping>
+        <name>Mintvanilla Icecream</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_icecream2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_icecream2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Icecream"/>
+        <Flavour>Caramel</Flavour>
+        <Syrup_name>Honey</Syrup_name>
+        <Topping>Chocolate chocochip</Topping>
+        <name>Vanilla chocochip icecream</name>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Walnut -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Walnut">
+        <rdf:type rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Topping"/>
+        <belongs_to rdf:resource="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry">
+        <rdfs:comment></rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer1"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Admin_account"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Customer_account"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Blueberry"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Nutty_topping"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Cappuccino_hotcoffee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Green_tea"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Chocolate_cake"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Vanilla_icecream1"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Green_tea"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Hot_coffee"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/shruthi/ontologies/2019/10/untitled-ontology-4#Tea"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
